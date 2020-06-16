@@ -48,3 +48,17 @@ If you call
  - http://127.0.0.1:53713/hello-world 
  
 you'll get the same `Hello World` result.
+
+## Test & Run
+
+### Test
+
+```
+mvn test
+```
+
+### Run
+
+```
+mvn lagom:runAll
+```
