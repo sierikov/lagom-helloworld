@@ -10,6 +10,8 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>hello-world-api</module>
+        <module>hello-world-impl</module>
     </modules>
 
     <build>
@@ -17,6 +19,11 @@
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.2.0</version>
+            </plugin>
+            <plugin>
+                <groupId>com.lightbend.lagom</groupId>
+                <artifactId>lagom-maven-plugin</artifactId>
+                <version>${lagom.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -56,6 +63,13 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.lightbend.lagom</groupId>
+                <artifactId>lagom-maven-dependencies</artifactId>
+                <version>${lagom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
