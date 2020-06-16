@@ -1,5 +1,7 @@
 # Lagom template
 
+![Lagom Hello World](https://repository-images.githubusercontent.com/272716692/5b2ee300-aff1-11ea-8da9-30963687b8a2)
+
 ## Inlcudes:
  - Maven Project configuration
  - Example of definition API for a Lagom Service
